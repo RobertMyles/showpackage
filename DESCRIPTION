@@ -1,0 +1,11 @@
+Package: showpackage
+Title: Quickly Show Package Information
+Version: 0.1.0
+Authors@R: person(given = "Robert Myles", family = "McDonnell",  
+    email = "robertmylesmcdonnell@gmail.com",
+    role = c("aut", "cre"))
+Description: Quickly retrieve package information for a particular package.
+    Can be used from R or the command line. From R, the results can be 
+    optionally returned as a dataframe. Inspired by Python's `pip show` 
+    command line utility.
+License: MIT + file LICENSE
