@@ -1,13 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# packageshow
+# showpackage
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-packageshow is an R package for quickly showing package information like
+showpackage is an R package for quickly showing package information like
 [`pip show`](https://pip.pypa.io/en/stable/reference/pip_show/) does for
 Python. It is *not* a package manager like miniCRAN,
 [jetpack](https://github.com/ankane/jetpack),
