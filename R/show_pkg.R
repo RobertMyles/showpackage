@@ -25,6 +25,8 @@ show_pkg <- function(package = NULL, lib_path = NULL,
   if(pkg_check) {
     pkg_desc <- file.path(lib_path, package, "DESCRIPTION")
     pkg_path <- file.path(lib_path, package)
+  } else{
+    stop("You don't have this package installed.")
   }
   # get package details
   desc <- tryCatch(read.dcf(pkg_desc, fields = fields),
