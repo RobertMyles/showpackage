@@ -20,5 +20,7 @@ R console) or "data" (returns the results as a dataframe).}
 Prints or returns information on a certain package.
 }
 \examples{
+\dontrun{
 show_pkg("MASS")
+}
 }

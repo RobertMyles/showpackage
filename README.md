@@ -88,8 +88,8 @@ show_pkg("ggplot2")
 Python’s `pip show` is really useful for quickly getting information for
 a particular package. R has a few tools for getting information on
 packages: `installed.packages()`; `tools::dependsOnPkgs()`;
-`tools::package_dependencies()` as well as the package manager packages
-mentioned above; it also has [great
+`packageVersion()`; `tools::package_dependencies()` as well as the
+package manager packages mentioned above; it also has [great
 tools](https://cran.r-project.org/web/packages/pkgnet/vignettes/pkgnet-intro.html)
 for [plotting
 networks](https://eranraviv.com/r-tips-and-tricks-package-dependencies/)

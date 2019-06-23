@@ -8,7 +8,9 @@
 #' @param return_value One of "print" (prints out the results to the 
 #' R console) or "data" (returns the results as a dataframe).
 #' @examples 
+#' \dontrun{
 #' show_pkg("MASS")
+#' }
 #' @export
 show_pkg <- function(package = NULL, lib_path = NULL, 
                      return_value = c("print", "data")){

@@ -9,5 +9,6 @@ Description: Quickly retrieve package information for a particular package.
     optionally returned as a dataframe. Inspired by Python's `pip show` 
     command line utility.
 License: MIT + file LICENSE
+Imports: docopt (>= 0.6.1)
 RoxygenNote: 6.1.1
 Encoding: UTF-8

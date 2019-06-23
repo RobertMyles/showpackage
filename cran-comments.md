@@ -3,8 +3,8 @@
 * ubuntu 14.04 (on travis-ci), R 3.5.2
 * win-builder (devel and release)
 
-## R CMD check results
 
-0 errors | 0 warnings | 1 note
+## R CMD check results ────────────────────────────────────────────── showpackage 0.1.0 
+Duration: 20.1s
 
-* This is a new release.
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔

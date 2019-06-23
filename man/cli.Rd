@@ -6,15 +6,11 @@
 \usage{
 cli()
 }
-\arguments{
-\item{file}{The file to create}
-}
 \description{
 Install the command line interface
 }
 \examples{
 \dontrun{
-
 showpackage::cli()
 }
 }

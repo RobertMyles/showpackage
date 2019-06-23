@@ -1,9 +1,7 @@
 #' Install the command line interface
 # Inspired by: https://github.com/ankane/jetpack/blob/master/R/cli.R
-#' @param file The file to create
 #' @export
 #' @examples \dontrun{
-#'
 #' showpackage::cli()
 #' }
 cli <- function() {
