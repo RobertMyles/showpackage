@@ -11,7 +11,7 @@ run <- function() {
   
   opts <- NULL
   tryCatch({
-    opts <- docopt(doc)
+    opts <- docopt::docopt(doc)
     }, error = function(err){
     msg <- conditionMessage(err)
     if (!grepl("usage:", msg)) {
