@@ -7,7 +7,7 @@
 #' showpackage::cli()
 #' }
 cli <- function() {
-  if (isWindows()) {
+  if (.Platform$OS.type != "unix") {
     file <- "C:/ProgramData/showpackage/bin/showpackage.cmd"
     rscript <- file.path(R.home("bin"), "Rscript.exe")
     dir <- dirname(file)
