@@ -1,6 +1,5 @@
 #' Run the command line interface
 # Inspired by: https://github.com/ankane/jetpack/blob/master/R/run.R
-#' @importFrom docopt docopt
 #' @export
 #' @keywords internal
 run <- function() {

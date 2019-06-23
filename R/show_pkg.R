@@ -1,6 +1,7 @@
 #' @title Show Package Details
 #' @description Prints or returns information on a certain package.
 #' @importFrom utils installed.packages
+#' @importFrom docopt docopt
 #' @param package Name of package.
 #' @param lib_path Default is \code{.libPaths()}, custom path to packages 
 #' can be specified.
