@@ -17,14 +17,14 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-packageshow is an R package for quickly showing package information like [`pip show`](https://pip.pypa.io/en/stable/reference/pip_show/) does for Python. It is _not_ a package manager like miniCRAN, [jetpack](https://github.com/ankane/jetpack), [packrat](https://rstudio.github.io/packrat/) or any of those packages, and is not intended to be. 
+showpackage is an R package for quickly showing package information like [`pip show`](https://pip.pypa.io/en/stable/reference/pip_show/) does for Python. It is _not_ a package manager like miniCRAN, [jetpack](https://github.com/ankane/jetpack), [packrat](https://rstudio.github.io/packrat/) or any of those packages, and is not intended to be. 
 
 ## Usage
 showpackage is designed for when you need to check package information quickly, from inside R or from the command line. 
 Imagine you are installing R on a server without internet access and need to see package dependencies to maintain the outward tranquility of your lovely DevOps team members. With showpackage, it's easy. Imagine we want to double-check that [data.table](https://github.com/Rdatatable/data.table) has no external dependencies. From the terminal on Mac, for example:
 
 ```bash
-packageshow data.table
+showpackage data.table
 ```
 
 The result is: 
@@ -33,7 +33,7 @@ The result is:
 
 Since R is not an _external_ dependency, and neither is [methods](https://stat.ethz.ch/R-manual/R-devel/library/methods/html/methods-package.html), we can see that we were right about data.table. 
 
-We can also see how many of our installed packages depend on the package in question. Let's see how it is for [Rcpp](https://cran.r-project.org/web/packages/Rcpp/index.html): 
+We can also see how many of our installed packages depend on the package in question. Let's see how it is for [Rcpp](https://CRAN.R-project.org/package=Rcpp): 
 
 ![](https://i.imgur.com/pGI9GOO.png)
 
@@ -41,7 +41,7 @@ The `Required-by` field shows us that quite a lot of the packages I've installed
 
 ### Inside R
 
-packageshow can be used from inside R too, which gives you the option of saving this info as a dataframe, should you want to. An example of both options:  
+showpackagecan be used from inside R too, which gives you the option of saving this info as a dataframe, should you want to. An example of both options:  
 
 ```{r message = FALSE, warning = FALSE, echo = FALSE}
 library(showpackage)
@@ -60,7 +60,7 @@ show_pkg("ggplot2")
 
 ## Inspiration
 
-Python's `pip show` is really useful for quickly getting information for a particular package. R has a few tools for getting information on packages: `installed.packages()`; `tools::dependsOnPkgs()`; `packageVersion()`; `tools::package_dependencies()` as well as the package manager packages mentioned above; it also has [great tools](https://cran.r-project.org/web/packages/pkgnet/vignettes/pkgnet-intro.html) for [plotting networks](https://eranraviv.com/r-tips-and-tricks-package-dependencies/) of the dependencies between packages. All wonderful tools, but nothing that does exactly what `pip show` does, which is something I really like and appreciated when I needed it for getting Python package dependencies. Here's a comparison of `pip show` and `packageshow`:  
+Python's `pip show` is really useful for quickly getting information for a particular package. R has a few tools for getting information on packages: `installed.packages()`; `tools::dependsOnPkgs()`; `packageVersion()`; `tools::package_dependencies()` as well as the package manager packages mentioned above; it also has [great tools](https://CRAN.R-project.org/package=pkgnet) for [plotting networks](https://eranraviv.com/r-tips-and-tricks-package-dependencies/) of the dependencies between packages. All wonderful tools, but nothing that does exactly what `pip show` does, which is something I really like and appreciated when I needed it for getting Python package dependencies. Here's a comparison of `pip show` and `showpackage`:  
 
 `pip show pandas` does:
 
@@ -76,7 +76,7 @@ Location: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-p
 Requires: numpy, python-dateutil, pytz
 ```
 
-`packageshow zoo` does:
+`showpackage zoo` does:
 
 ```bash
 Package: zoo
@@ -101,10 +101,10 @@ Location: /Library/Frameworks/R.framework/Versions/3.6/Resources/library/zoo
 [Lots of people.](http://dirk.eddelbuettel.com/blog/2018/02/28/#017_dependencies)
 
 ## Thanks
-Big thanks to [Andrew Kane](https://github.com/ankane), who made jetpack. I followed similar logic to get a command line interface for packageshow.  
+Big thanks to [Andrew Kane](https://github.com/ankane), who made jetpack. I followed similar logic to get a command line interface for showpackage.  
 
 ## See also
-- [pkgnet](https://cran.r-project.org/web/packages/pkgnet/vignettes/pkgnet-intro.html)
-- [miniCRAN](https://cran.r-project.org/web/packages/miniCRAN/)
-- [jetpack](https://cran.r-project.org/web/packages/jetpack/)
-- [packrat](https://cran.r-project.org/web/packages/packrat/)
+- [pkgnet](https://CRAN.R-project.org/package=pkgnet)
+- [miniCRAN](https://CRAN.R-project.org/package=miniCRAN/)
+- [jetpack](https://CRAN.R-project.org/package=jetpack/)
+- [packrat](https://CRAN.R-project.org/package=packrat/)

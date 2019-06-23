@@ -38,7 +38,7 @@ we can see that we were right about data.table.
 
 We can also see how many of our installed packages depend on the package
 in question. Let’s see how it is for
-[Rcpp](https://cran.r-project.org/web/packages/Rcpp/index.html):
+[Rcpp](https://CRAN.R-project.org/package=Rcpp):
 
 ![](https://i.imgur.com/pGI9GOO.png)
 
@@ -47,7 +47,7 @@ installed utilise Rcpp.
 
 ### Inside R
 
-showpackage can be used from inside R too, which gives you the option of
+showpackagecan be used from inside R too, which gives you the option of
 saving this info as a dataframe, should you want to. An example of both
 options:
 
@@ -90,8 +90,7 @@ a particular package. R has a few tools for getting information on
 packages: `installed.packages()`; `tools::dependsOnPkgs()`;
 `packageVersion()`; `tools::package_dependencies()` as well as the
 package manager packages mentioned above; it also has [great
-tools](https://cran.r-project.org/web/packages/pkgnet/vignettes/pkgnet-intro.html)
-for [plotting
+tools](https://CRAN.R-project.org/package=pkgnet) for [plotting
 networks](https://eranraviv.com/r-tips-and-tricks-package-dependencies/)
 of the dependencies between packages. All wonderful tools, but nothing
 that does exactly what `pip show` does, which is something I really like
@@ -142,11 +141,11 @@ people.](http://dirk.eddelbuettel.com/blog/2018/02/28/#017_dependencies)
 
 Big thanks to [Andrew Kane](https://github.com/ankane), who made
 jetpack. I followed similar logic to get a command line interface for
-packageshow.
+showpackage.
 
 ## See also
 
-  - [pkgnet](https://cran.r-project.org/web/packages/pkgnet/vignettes/pkgnet-intro.html)
-  - [miniCRAN](https://cran.r-project.org/web/packages/miniCRAN/)
-  - [jetpack](https://cran.r-project.org/web/packages/jetpack/)
-  - [packrat](https://cran.r-project.org/web/packages/packrat/)
+  - [pkgnet](https://CRAN.R-project.org/package=pkgnet)
+  - [miniCRAN](https://CRAN.R-project.org/package=miniCRAN/)
+  - [jetpack](https://CRAN.R-project.org/package=jetpack/)
+  - [packrat](https://CRAN.R-project.org/package=packrat/)
