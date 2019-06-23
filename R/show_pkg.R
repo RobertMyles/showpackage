@@ -1,5 +1,13 @@
-#x <- as.data.frame(installed.packages(fields = c("URL", "Description", "Maintainer")), stringsAsFactors = FALSE)
-#!/usr/bin/env Rscript --vanilla
+#' @title Show Package Details
+#' @description Prints or returns information on a certain package.
+#' @param package Name of package.
+#' @param lib_path Default is \code{.libPaths()}, custom path to packages 
+#' can be specified.
+#' @param return_value One of "print" (prints out the results to the 
+#' R console) or "data" (returns the results as a dataframe).
+#' @example 
+#' show_pkg("MASS")
+#' @export
 show_pkg <- function(package = NULL, lib_path = NULL, 
                      return_value = c("print", "data")){
   # checks
