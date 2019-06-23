@@ -25,7 +25,7 @@ double-check that [data.table](https://github.com/Rdatatable/data.table)
 has no external dependencies. From the terminal on Mac, for example:
 
 ``` bash
-packageshow data.table
+showpackage data.table
 ```
 
 The result is:
@@ -47,7 +47,7 @@ installed utilise Rcpp.
 
 ### Inside R
 
-packageshow can be used from inside R too, which gives you the option of
+showpackage can be used from inside R too, which gives you the option of
 saving this info as a dataframe, should you want to. An example of both
 options:
 
@@ -96,7 +96,7 @@ networks](https://eranraviv.com/r-tips-and-tricks-package-dependencies/)
 of the dependencies between packages. All wonderful tools, but nothing
 that does exactly what `pip show` does, which is something I really like
 and appreciated when I needed it for getting Python package
-dependencies. Here’s a comparison of `pip show` and `packageshow`:
+dependencies. Here’s a comparison of `pip show` and `showpackage`:
 
 `pip show pandas` does:
 
@@ -112,7 +112,7 @@ Location: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-p
 Requires: numpy, python-dateutil, pytz
 ```
 
-`packageshow zoo` does:
+`showpackage zoo` does:
 
 ``` bash
 Package: zoo
