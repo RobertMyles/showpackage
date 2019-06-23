@@ -1,11 +1,12 @@
 #' @title Show Package Details
 #' @description Prints or returns information on a certain package.
+#' @importFrom utils installed.packages
 #' @param package Name of package.
 #' @param lib_path Default is \code{.libPaths()}, custom path to packages 
 #' can be specified.
 #' @param return_value One of "print" (prints out the results to the 
 #' R console) or "data" (returns the results as a dataframe).
-#' @example 
+#' @examples 
 #' show_pkg("MASS")
 #' @export
 show_pkg <- function(package = NULL, lib_path = NULL, 
