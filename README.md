@@ -14,6 +14,12 @@ Python. It is *not* a package manager like miniCRAN,
 [packrat](https://rstudio.github.io/packrat/) or any of those packages,
 and is not intended to be.
 
+## Installation
+
+```r
+remotes::install_github("RobertMyles/showpackage")
+```
+
 ## Usage
 
 showpackage is designed for when you need to check package information
