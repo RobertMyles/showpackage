@@ -143,8 +143,8 @@ Location: /Library/Frameworks/R.framework/Versions/3.6/Resources/library/zoo
 [Lots of
 people.](http://dirk.eddelbuettel.com/blog/2018/02/28/#017_dependencies)
 
-\`\`\` \#\# Thanks Big thanks to [Andrew
-Kane](https://github.com/ankane), who made jetpack. I followed similar
+## Thanks 
+Big thanks to [Andrew Kane](https://github.com/ankane), who made jetpack. I followed similar
 logic to get a command line interface for showpackage.
 
 ## See also
