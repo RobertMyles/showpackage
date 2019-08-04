@@ -16,15 +16,22 @@ show_pkg <- function(package = NULL, lib_path = NULL,
                      return_value = c("print", "data")){
   # checks
   if (is.null(lib_path)) lib_path <- .libPaths()
-  if(is.null(package)) stop("Please specifiy a package.")
+  if (is.null(package)) stop("Please specify a package.")
   # args
   return_val <- match.arg(return_value, choices = c("print", "data"))
   fields <- c("Package", "Version", "Depends", "Imports", "LinkingTo",
               "URL", "Description", "Maintainer")
   # get package 
   pkgs <- list.files(lib_path)
+  # account for unlikely error
+  if (length(pkgs) == 0) {
+    stop("There are no packages returned by `.libPaths()`. If running R 
+         previous to version 3.2.2, you may have permission problems. 
+         Update R if possible.")
+  }
+  
   pkg_check <- package %in% pkgs
-  if(pkg_check) {
+  if (pkg_check) {
     pkg_desc <- file.path(lib_path, package, "DESCRIPTION")
     pkg_path <- file.path(lib_path, package)
   } else{
@@ -48,7 +55,7 @@ show_pkg <- function(package = NULL, lib_path = NULL,
   required_by <- paste0(required_by, collapse = ", ")
   
   ## filter Imports and depends to find package
-  if(return_val == "data"){
+  if (return_val == "data"){
     return(desc)
   } else{
     # format output

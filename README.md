@@ -14,21 +14,13 @@ Python. It is *not* a package manager like miniCRAN,
 [packrat](https://rstudio.github.io/packrat/) or any of those packages,
 and is not intended to be.
 
-## Installation
-
-```r
-remotes::install_github("RobertMyles/showpackage")
-```
-
-To use showpackage from the command line, run `showpackage::cli()`  
-
 ## Usage
 
 showpackage is designed for when you need to check package information
 quickly, from inside R or from the command line. Imagine you are
 installing R on a server without internet access and need to see package
 dependencies to maintain the outward tranquility of your lovely DevOps
-team members. With showpackage, it’s easy. Imagine we want to
+team members. With showpackage, it’s easy. For example, we may want to
 double-check that [data.table](https://github.com/Rdatatable/data.table)
 has no external dependencies. From the terminal on Mac, for example:
 
@@ -40,7 +32,7 @@ The result is:
 
 ![](https://i.imgur.com/GbGx5dM.png)
 
-Since R is not an *external* dependency, and neither is
+Since R is not an external dependency, and neither is
 [methods](https://stat.ethz.ch/R-manual/R-devel/library/methods/html/methods-package.html),
 we can see that we were right about data.table.
 
@@ -55,7 +47,7 @@ installed utilise Rcpp.
 
 ### Inside R
 
-showpackagecan be used from inside R too, which gives you the option of
+showpackage can be used from inside R too, which gives you the option of
 saving this info as a dataframe, should you want to. An example of both
 options:
 
@@ -87,7 +79,7 @@ show_pkg("ggplot2")
 #> Maintainer: Hadley Wickham 
 #> Maintainer Email: hadley@rstudio.com
 #> Homepage: http://ggplot2.tidyverse.org, https://github.com/tidyverse/ggplot2
-#> Required by: bayesplot, brms, CausalImpact, colourpicker, crosstalk, dlstats, forecast, ggiraph, ggridges, rstanarm, shinystan, tidyverse, viridis, cowplot, gganimate, ggrepel, plotly, rstan
+#> Required by: bayesplot, brms, CausalImpact, colourpicker, cowplot, crosstalk, dlstats, forecast, ggiraph, ggridges, rstanarm, shinystan, tidyverse, viridis, ggalt, gganimate, ggrepel, plotly, rstan
 #> Location: /Library/Frameworks/R.framework/Versions/3.6/Resources/library/ggplot2
 ```
 
@@ -144,6 +136,21 @@ Location: /Library/Frameworks/R.framework/Versions/3.6/Resources/library/zoo
 
 [Lots of
 people.](http://dirk.eddelbuettel.com/blog/2018/02/28/#017_dependencies)
+
+## Testing
+
+This package has some command line interaction stuff going on with
+`cli()`. It should work on your OS, but I haven’t tested it on all
+systems. Any problems, open an issue and let me know. This is also why
+it’s not on CRAN, but might be some
+day.
+
+``` r
+── R CMD check results ──────────────────────────────────────────────────────────────────────── showpackage 0.1.0 ────
+Duration: 1m 26.7s
+
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔
+```
 
 ## Thanks
 
