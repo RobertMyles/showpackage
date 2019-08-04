@@ -137,26 +137,9 @@ Location: /Library/Frameworks/R.framework/Versions/3.6/Resources/library/zoo
 [Lots of
 people.](http://dirk.eddelbuettel.com/blog/2018/02/28/#017_dependencies)
 
-## Testing
-
-This package has some command line interaction stuff going on with
-`cli()`. It should work on your OS, but I haven’t tested it on all
-systems. Any problems, open an issue and let me know. This is also why
-it’s not on CRAN, but might be some
-day.
-
-``` r
-── R CMD check results ──────────────────────────────────────────────────────────────────────── showpackage 0.1.0 ────
-Duration: 1m 26.7s
-
-0 errors ✔ | 0 warnings ✔ | 0 notes ✔
-```
-
-## Thanks
-
-Big thanks to [Andrew Kane](https://github.com/ankane), who made
-jetpack. I followed similar logic to get a command line interface for
-showpackage.
+\`\`\` \#\# Thanks Big thanks to [Andrew
+Kane](https://github.com/ankane), who made jetpack. I followed similar
+logic to get a command line interface for showpackage.
 
 ## See also
 
