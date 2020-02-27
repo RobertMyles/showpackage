@@ -10,5 +10,5 @@ Description: Quickly retrieve package information for a particular package.
     command line utility.
 License: MIT + file LICENSE
 Imports: docopt (>= 0.6.1)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Encoding: UTF-8

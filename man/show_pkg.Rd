@@ -4,8 +4,7 @@
 \alias{show_pkg}
 \title{Show Package Details}
 \usage{
-show_pkg(package = NULL, lib_path = NULL, return_value = c("print",
-  "data"))
+show_pkg(package = NULL, lib_path = NULL, return_value = c("print", "data"))
 }
 \arguments{
 \item{package}{Name of package.}
