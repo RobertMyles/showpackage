@@ -3,3 +3,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^\.github$
+^\.github/workflows/rcheck\.yaml$
+^\.github/workflows/buildsite\.yaml$
