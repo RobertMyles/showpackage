@@ -69,7 +69,7 @@ Since R is not an external dependency, and neither is
 we can see that we were right about data.table.
 
 You can also see that a package I’m using,
-[splitstackshape](https://cran.r-project.org/web/packages/splitstackshape/index.html),
+[splitstackshape](https://cran.r-project.org/package=splitstackshape),
 relies on data.table. showpackage allows us to see how many of our
 installed packages depend on a certain package. Let’s see how it is for
 [Rcpp](https://CRAN.R-project.org/package=Rcpp):

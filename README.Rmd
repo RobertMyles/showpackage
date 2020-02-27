@@ -66,7 +66,7 @@ Location: /Library/Frameworks/R.framework/Versions/3.6/Resources/library/data.ta
 
 Since R is not an external dependency, and neither is [methods](https://stat.ethz.ch/R-manual/R-devel/library/methods/html/methods-package.html), we can see that we were right about data.table. 
 
-You can also see that a package I'm using, [splitstackshape](https://cran.r-project.org/web/packages/splitstackshape/index.html), relies on data.table. showpackage allows us to see how many of our installed packages depend on a certain package. Let's see how it is for [Rcpp](https://CRAN.R-project.org/package=Rcpp): 
+You can also see that a package I'm using, [splitstackshape](https://cran.r-project.org/package=splitstackshape), relies on data.table. showpackage allows us to see how many of our installed packages depend on a certain package. Let's see how it is for [Rcpp](https://CRAN.R-project.org/package=Rcpp): 
 
 ```
 $ showpackage Rcpp
