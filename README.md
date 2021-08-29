@@ -21,12 +21,6 @@ and is not intended to be.
 ## Installation
 
 ``` r
-install.packages("showpackage")
-```
-
-or
-
-``` r
 remotes::install_github("robertmyles/showpackage")
 ```
 
